@@ -38,7 +38,7 @@ double pi_paralelo() {
     start = omp_get_wtime();
     step = 1.0/(double)STEPS;
 
-    #pragma omp parallel num_threads(2)
+    #pragma omp parallel num_threads(4)
     {
         double x,sum=0.0;
         int i, id, nthrds;
